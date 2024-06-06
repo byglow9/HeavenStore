@@ -2,6 +2,7 @@
 require 'spec_helper'
 require 'vcr'
 require 'simplecov'
+require 'faker'
 
 
 ENV['RAILS_ENV'] ||= 'test'
