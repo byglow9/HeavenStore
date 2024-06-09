@@ -1,2 +1,10 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+
+<% if user_signed_in?%>
+    <h1>Bem vindo gai</h1>
+    <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+<% else %>
+    <h2> voce nao esta logado.. pfv se cadastr <%= link_to "Sign up", new_user_registration_path, class: "navbar-link"  %> | </h2>
+    <%= link_to "Login", new_user_session_path, class: "navbar-link"  %>
+<% end %>
+
