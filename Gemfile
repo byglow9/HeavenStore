@@ -52,4 +52,5 @@ group :test do
   gem 'simplecov'
   gem 'vcr'
   gem 'webmock'
+  gem 'pg_enum'
 end
