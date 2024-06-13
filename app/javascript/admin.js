@@ -1,7 +1,7 @@
 import "@hotwired/turbo-rails"
-import "./controllers"
+import "./controllers/index.js"
+import "./jquery.js"
 import * as bootstrap from "bootstrap"
-window.bootstrap = bootstrap
-//Turbo.session.drive = false
-import "./sbadmin/sbadmin.js"
+Turbo.session.drive = false
+import "./sbadmin/sdadmin.js"
 
